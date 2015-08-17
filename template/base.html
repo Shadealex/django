@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="ru">
+	<head>
+		<title>{% block title %} {% endblock %}</title>
+		<link href="{% static 'css/base.css' %}" rel="stylesheet">
+	</head>
+	
+	<body>
+		{% block content %}
+			<div>
+				<img src="{{ MEDIA_URL }}img/background.jpg" class="img-responsive">
+			</div>
+		{% endblock %}
+		
+		{% block footer %}
+			<p>Thanks for visiting my site.</p>
+		{% endblock %}
+
+	</body>
+</html>

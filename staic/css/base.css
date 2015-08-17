@@ -1,0 +1,7 @@
+body {
+    background: url({{ MEDIA_URL }}/img/backgroung.jpg);
+	}
+
+.str {
+	font-size: 100px;
+	}
